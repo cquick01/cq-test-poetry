@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "opt"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[[tool.poetry.source]]
+name = "private_pypi"
+url = "https://pypi.domain.tld/simple/"
+priority = "supplemental"
+
+# For updating packages
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
